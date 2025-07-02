@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import React, { useEffect } from 'react';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -29,6 +31,10 @@ const RoomDetail = ({ room, onBack, rooms = [], onSelectRoom }) => {
    const handleBack = () => {
     navigate('/'); // O a la ruta que tengas para el listado de habitaciones
   };
+
+useEffect(() => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}, [room?.id]); // se ejecuta cada vez que cambia la habitación
 
   const amenities = [
     { icon: <FiWifi className="text-indigo-600" />, text: 'Wi-Fi de alta velocidad' },
