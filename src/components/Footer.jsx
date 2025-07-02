@@ -37,11 +37,11 @@ const Footer = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <FiMapPin className="mt-1 mr-3 text-indigo-400" />
-                <span>Carrera 10 #25-35, Cartagena, Colombia</span>
+                <span>Carrera 29 #9-26 maicao la guajira</span>
               </li>
               <li className="flex items-start">
                 <FiPhone className="mt-1 mr-3 text-indigo-400" />
-                <span>+57 123 456 7890</span>
+                <span>+57 301 564 3928</span>
               </li>
               <li className="flex items-start">
                 <FiMail className="mt-1 mr-3 text-indigo-400" />
@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Copyright and Legal */}
         <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
-            © {new Date().getFullYear()} Hotel Paraíso. Todos los derechos reservados.
+            © jordi villa {new Date().getFullYear()} Hotel Paraíso. Todos los derechos reservados.
           </div>
           <div className="flex space-x-6">
             <a href="#" className="hover:text-white transition-colors">Política de Privacidad</a>
